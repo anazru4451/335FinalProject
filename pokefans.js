@@ -78,12 +78,12 @@ app.get("/random", async (req, res) => {
         pokemonCry: pokemonData.cries.latest,
         encounterType: speciesData.is_legendary? `<h2 style="color: yellow"> ⭐A LEGENDARY ENCOUNTER⭐ </h2>`: 
             speciesData.is_mythical? `<h2 style="color: rgb(255, 91, 244)">  🔮A MYTHICAL ENCOUNTER🔮 </h2>`: ``, 
-        shiny: shinyRate ==! 0? `<span style="color: yellow">✨ SHINY ✨</span>`: ``,
-        isShiny: shinyRate ==!0? "y" : "n",
+        shiny: shinyRate === 0? `<span style="color: yellow">✨ SHINY ✨</span>`: ``,
+        isShiny: shinyRate ===0? "y" : "n",
         pokemon: pokemonData.name.toUpperCase(), 
-        sprite: shinyRate ==! 0? `<img src="${pokemonData.sprites.front_shiny}" style="border: inset; border-color: rgb(0, 153, 0); border-radius: 30px; border-width: thick">` :
+        sprite: shinyRate === 0? `<img src="${pokemonData.sprites.front_shiny}" style="border: inset; border-color: rgb(0, 153, 0); border-radius: 30px; border-width: thick">` :
              `<img src="${pokemonData.sprites.front_default}" style="border: inset; border-radius: 30px; border-color:green; border-width: thick">`,
-        spriteStorage: shinyRate ==! 0? pokemonData.sprites.front_shiny : pokemonData.sprites.front_default,
+        spriteStorage: shinyRate === 0? pokemonData.sprites.front_shiny : pokemonData.sprites.front_default,
         catchRate: speciesData.capture_rate
     }
 
