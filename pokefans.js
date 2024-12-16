@@ -104,7 +104,7 @@ app.get("/pc", async (req, res) => {
 
         table += `</table>`
     } else {
-        table = `<h3>You haven't caught any Pokémon yet! Go catch them and mezase Pokémon master!</h3>`
+        table = `<h3>You haven't caught any Pokémon yet! Go catch them and mezase Pokémon master!</h3>`;
     }
 
     res.render("pc", {user: req.session.email, pokemonTable : table});
