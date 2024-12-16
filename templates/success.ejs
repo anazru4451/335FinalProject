@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Caught</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("battleBackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%; 
+        }
+
+        body * {
+            text-align: center;
+        }
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        span * {
+            border-radius: 30%;
+            background-color: rgba(240, 248, 255, 0.247);
+            margin: 1rem;
+        }
+
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+            text-decoration: none;
+        }  
+    </style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="caughtPokemon.mp3">
+    </audio>
+    <h2 style="color:white"> Pokémon Getto Da Ze!<br> YOU CAUGHT <%- pokemon %>!</h2>
+    <img src="pokemonCaught.gif" style="border-radius: 8%; max-width: 85%; max-height:
+         85%; border: outset; border-color: rgb(15, 109, 15); border-width: 0.275rem;"> 
+    <br>
+    <p style="font-size: large;"><%- pokemon %> has been added to your PC! 
+    <br> YOSHA! You're one step closer to being a Pokémon master!
+    </p>
+
+    <span> 
+        <button><a href="/main">🏃 RUN HOME 💨</a></button> 
+        <button><a href="/encounter">🌿 MORE TALL GRASS 🌿</a></button>
+    </span>
+</body>
+</html>

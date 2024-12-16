@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ran Away</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("battleBackground.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%; 
+        }
+
+        body * {
+            text-align: center;
+        }
+
+        span {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        span * {
+            border-radius: 30%;
+            background-color: rgba(240, 248, 255, 0.247);
+            margin: 1rem;
+        }
+
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+            text-decoration: none;
+        }  
+    </style>
+</head>
+<body>
+    <audio autoplay>
+        <source src="breakout.mp3">
+    </audio>
+
+    <h2 style="color: white">N-NANI?!? <%- pokemon %> BROKE FREE! <br> That Pokéball cost me $200 after taxes ; _ ;</h2>
+    <img src="pokemonEscaped.gif" style="border-radius: 8%; width: 30%; height:
+         30%; border: outset; border-color: rgb(15, 109, 15); border-width: 0.275rem;">
+    <p>After mourning your financial losses, you look up...</p>
+    <h3>OH NO! THE WILD <%- pokemon %> FLED!
+    <br> Daijoubu! Don't be discouraged, mezase Pokémon master!
+    </h3>
+    <span> 
+        <button><a href="/main">🏃 RUN HOME 💨</a></button> 
+        <button><a href="/encounter">🌿 MORE TALL GRASS 🌿</a></button>
+    </span>
+</body>
+</html>

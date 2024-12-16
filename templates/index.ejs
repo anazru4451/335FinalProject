@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéFans Login</title>
+    <style>
+        body {
+            background-image: url("loginbackground.jpg");
+            background-size: 100% 100%; 
+            background-position: center; 
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+            width: 100vw; 
+        }
+        
+        div {
+            flex-direction: column;
+            display: flex;
+            justify-content: center; 
+            align-items: center;  
+
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10% / 50%;
+            padding: 2rem;
+            border: inset;
+            border-color:rgb(47, 47, 176);
+            border-width: 0.75rem;
+            background-color: rgba(255, 252, 52, 0.495);
+        }
+
+        fieldset * {
+            margin: 0.25rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="pokefanslogo.png" alt="PokeFansLogo" style="max-width: 55%; max-height: 55%;">
+        <form action= "<%- act %>" method="post">
+            <fieldset>
+                <label><%- labelTag %></label>
+                <input type="email" name="email" placeholder="miku@umd.edu" required>
+                <input type="submit" value= "<%- submitBtn %>" style="border: outset; border-radius: 10% / 50%; size: 1.5rem">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

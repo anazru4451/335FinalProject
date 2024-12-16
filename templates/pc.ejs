@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("pcBackground.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100%;
+            width: 100%; 
+        }
+
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><%- user %>'s PC</h1>
+    <a href="/main">🏠 HOME 🏠</a>
+    <%- pokemonTable %>
+    
+</body>
+</html>
